@@ -146,7 +146,46 @@ namespace LibreriaArray
             }
             return risposta;
         }
+        public static int CercaMax(int[] array)
+        {
+            int max = int.MinValue;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] > max)
+                    max = array[i];
+            }
+            return max;
+        }
+        public static int CercaMin(int[] array)
+        {
+            int min = int.MaxValue;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] < min)
+                    min = array[i];
+            }
+            return min;
+        }
+        public static bool Crescente(int[] array)
+        {
+            bool risposta = true;
+            for (int i = 1; i < array.Length; i++)
+            {
+                if (array[i] <= array[i - 1])
+                    risposta = false;
+            }
+            return risposta;
+        }
+        public static bool Decrescente(int[] array)
+        {
+            bool risposta = true;
+            for (int i = 1; i < array.Length; i++)
+            {
+                if (array[i] >= array[i - 1])
+                    risposta = false;
+            }
+            return risposta;
+        }
 
-        
     }
 }
