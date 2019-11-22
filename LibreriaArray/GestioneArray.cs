@@ -184,6 +184,5 @@ namespace LibreriaArray
             }
             return risposta;
         }
-
     }
 }
