@@ -98,8 +98,6 @@ namespace LibreriaArray
             return risposta;
         }
 
-        // Tipi string
-
         public static void LeggiArrayString(string[] array)
         {
             for (int i = 0; i < array.Length; i++)
