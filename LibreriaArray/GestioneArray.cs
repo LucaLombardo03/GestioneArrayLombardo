@@ -15,9 +15,9 @@ namespace LibreriaArray
         }
         public static void StampaArray(int[] array)
         {
-            for(int i = 0; i < array.Length; i++)
+            for (int i = 0; i < array.Length; i++)
             {
-                Console.Write(array[i] +" ");
+                Console.WriteLine(array[i] + " ");
             }
         }
         public static int[] CopiaArrayInt(int[] array)
@@ -184,5 +184,27 @@ namespace LibreriaArray
             }
             return risposta;
         }
+        public static int[] RandomNumberArray(int minValue, int maxValue, int size = 3)
+        {
+            if (minValue >= maxValue)
+                return null;
+
+            Random randomNumberGenerator = new Random();
+            int[] numbers = new int[3];
+            for (int i = 0; i < 3; i++)
+                numbers[i] = randomNumberGenerator.Next(minValue, maxValue);
+            return numbers;
+        }
+        public static void FillArray(int[] array)
+        {
+            Random randomNumberGenerator = new Random();
+            for (int i = 0; i < array.Length; i++)
+                array[i] = randomNumberGenerator.Next();
+        }
+        public static int[] UnisciArray(int[] array, int[] array2, int[] array3)
+        {
+            
+        }
     }
 }
+        
